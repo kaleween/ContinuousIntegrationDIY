@@ -23,8 +23,6 @@ namespace Tests
                 "Version : " + Assembly.GetAssembly(typeof(Program))?.GetName().Version + Environment.NewLine +
                 "Hello World!" + Environment.NewLine, 
                 consoleOutput.ToString());
-            
-            consoleOutput.ToString("test pre-push");
-        }
+            }
     }
 }
