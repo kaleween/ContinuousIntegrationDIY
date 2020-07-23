@@ -27,4 +27,12 @@ echo "$FILES" | cat | xargs | sed -e 's/ /,/g' | xargs dotnet-format --include
 # Add back the modified files to staging
 echo "$FILES" | xargs git add
 
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+if [ "$branch" = "master" ]; then
+  echo "Commit impossible sur la branche master"
+  exit 1
+fi
+
+
 exit 0
