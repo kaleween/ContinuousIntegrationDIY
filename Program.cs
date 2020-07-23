@@ -9,7 +9,6 @@ namespace ContinuousIntegrationDIY
         {
             Console.WriteLine("Version : " + Assembly.GetExecutingAssembly().GetName().Version);
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Test pre commit");
         }
     }
 }
