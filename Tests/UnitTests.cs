@@ -12,7 +12,7 @@ namespace Tests
     {
         [TestMethod]
         [TestCategory("Unit")]
-        public void Hello_World_Est_Bien_Formé()
+        public void Hello_World_Est_Bien_Forme()
         {
             var consoleOutput = new StringBuilder();
             Console.SetOut(new StringWriter(consoleOutput));
